@@ -29,9 +29,9 @@ nav a {
   text-decoration: none;
   color: white;
   transition: color 0.1s;
-  display: 1px;;
+  display: inline-block;;
   width: 70px; /* Defina a largura desejada */
-  height: 20px; /* Defina a altura desejada */
+  height: 15px; /* Defina a altura desejada */
   padding: 5px;
   background-color: #c03121;
   border-radius: 70px;
