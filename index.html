@@ -1,28 +1,29 @@
-<!DOCTYPE html> <!-- Declaração do tipo de documento, define que o HTML está sendo usado -->
-<html lang="pt-br"> <!-- Define o idioma da página como português do Brasil -->
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta o layout para dispositivos móveis -->
-  <title>Escola Marlon Lima</title> <!-- Título da página que aparece na aba do navegador -->
-  <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo de estilo externo -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola Marlon Lima</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    /* Estilos CSS para centralizar as imagens dentro do portfólio */
-    .portfolio-item {
-      display: flex; /* Layout flexível */
-      justify-content: center; /* Centraliza os itens horizontalmente */
-      align-items: center; /* Centraliza os itens verticalmente */
-      flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte, se necessário */
+    /* Estilos CSS gerais */
+    .header-content img {
+      max-width: 100%; /* Impede que a imagem ultrapasse a largura do seu contêiner */
+      height: auto; /* Mantém a proporção da imagem */
     }
 
-    .portfolio-item img {
-      margin: 10px; /* Adiciona espaçamento entre as imagens */
+    /* Estilos para dispositivos móveis (quando a largura da tela é até 768px) */
+    @media (max-width: 768px) {
+      .header-content img {
+        width: 100%; /* A imagem ocupará toda a largura da tela */
+        height: auto; /* Mantém a proporção da imagem */
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Cabeçalho da página -->
   <header>
     <div class="header-content">
       <!-- Link para o Instagram que abre em uma nova aba -->
@@ -33,58 +34,14 @@
     </div>
   </header>
 
-  <!-- Corpo principal da página -->
   <main>
-    <!-- Seção de serviços -->
-    <div id="services">
-      <div class="title">
-        <!-- Título da seção -->
-        <h1>Nossos Serviços</h1>
-      </div>
-      <div class="description">
-        <!-- Lista de serviços oferecidos -->
-        <ul>
-          <li><p>Aprenda a tocar violão ou guitarra.</p></li>
-          <li><p>O bem estar do cliente é a nossa satisfação.</p></li>
-          <li><p>Atendimento presencial e online.</p></li>
-          <li><p>Confira nossos preços.</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Seção de portfólio -->
-    <div id="portfolio">
-      <div class="title">
-        <h2>Portfólio</h2> <!-- Título da seção de portfólio -->
-      </div>
-    </div>
-    <p>Exemplo do trabalho:</p>
-    <div class="portfolio-item">
-      <!-- Imagens do portfólio (substitua as URLs das imagens) -->
-      <img src="" width="20%" height="auto"> 
-      <img src="" width="20%" height="auto">
-      <img src="" width="20%" height="auto">
-
-      <!-- Adicione mais itens de portfólio aqui -->
-    </div>
-
-    <!-- Seção de contato -->
-    <div id="contact">
-      <div class="title">
-        <h3>Entre em Contato</h3> <!-- Título da seção de contato -->
-      </div>
-      <div class="description">
-        <p>Para agendar um horário conosco, clique ou toque no logotipo</p> <!-- Instruções de contato -->
-      </div>
-    </div>
+    <!-- Conteúdo principal da página -->
   </main>
 
-  <!-- Rodapé da página -->
   <footer>
     <p>&copy; 2024 Marlon Lima</p> <!-- Copyright -->
   </footer>
 
-  <!-- Link para o arquivo de script -->
   <script src="script.js"></script>
 </body>
 
