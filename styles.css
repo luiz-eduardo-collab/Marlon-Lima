@@ -1,139 +1,144 @@
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
-  margin: 5px;
-  padding: 5px;
-  align-items: center;
+  font-family: Arial, sans-serif; /* Define a fonte da página */
+  margin: 5px; /* Adiciona um pequeno espaço nas bordas */
+  padding: 5px; /* Adiciona um pequeno espaço dentro da página */
+  align-items: center; /* Alinha o conteúdo no centro (não é necessário aqui, pois body não é um flex container) */
 }
 
 header {
-  background-color: #250f0f;
-  color: white;
-  padding:10px;
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items:center;
-  text-align: center;
-  border-radius: 5px;
+  background-color: #250f0f; /* Cor de fundo do cabeçalho */
+  color: white; /* Cor do texto no cabeçalho */
+  padding: 15px; /* Espaçamento interno do cabeçalho */
+  display: flex; /* Usa o layout flexível */
+  flex-direction: column; /* Organiza os itens na direção vertical */
+  justify-content: center; /* Alinha os itens verticalmente no centro */
+  align-items: center; /* Alinha os itens horizontalmente no centro */
+  text-align: center; /* Centraliza o texto dentro do cabeçalho */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  i
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin: 0; /* Remove a margem padrão */
 }
 
 nav a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.1s;
-  display: inline-block;;
-  width: 70px; /* Defina a largura desejada */
-  height: 15px; /* Defina a altura desejada */
-  padding: 5px;
-  background-color: #c03121;
-  border-radius: 70px;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white; /* Cor do texto dos links */
+  transition: color 0.1s; /* Transição suave na cor do link */
+  display: inline-block; /* Corrige o display, pois '1px' estava errado */
+  width: 70px; /* Define a largura do link */
+  height: 20px; /* Define a altura do link */
+  padding: 5px; /* Espaçamento interno */
+  background-color: #c03121; /* Cor de fundo do link */
+  border-radius: 70px; /* Borda arredondada */
 }
 
 nav a:hover {
-  color: #ff3700;
+  color: #ff3700; /* Altera a cor quando o link é hover (passa o mouse sobre) */
 }
 
 main {
-  padding: 1rem;
+  padding: 1rem; /* Espaçamento interno do conteúdo principal */
 }
 
 header img,
 footer {
-  display: block;
-  margin: auto;
+  display: block; /* Faz a imagem e o footer se comportarem como blocos */
+  margin: auto; /* Centraliza a imagem e o footer */
 }
 
 .header-content {
-  margin: 0;
+  margin: 0; /* Remove a margem da classe .header-content */
 }
 
 .horizontal-list a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white; /* Cor do texto dos links */
 }
 
-//.horizontal-list a:hover {
-  //color: #ff3300;
-}
+/* Estilo comentado para cor do link ao passar o mouse */
+/*.horizontal-list a:hover {
+  color: #ff3300;
+}*/
+
 .container-botoes {
-  display: flex;
-  justify-content: space-between;
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaçamento igual entre os botões */
 }
 
 /* Estilos para o container das imagens */
 .image-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaçamento entre as imagens */
+  align-items: center; /* Alinha as imagens ao centro */
+  flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
 }
 
 /* Estilos para o título "Portfólio" */
 #portfolio {
-  text-align: 0; /* Centralizar horizontalmente */
+  text-align: center; /* Centraliza o título "Portfólio" */
 }
 
 #portfolio .content {
-  flex: 1;
-  padding: 0;
+  flex: 1; /* Faz o conteúdo ocupar o máximo de espaço possível */
+  padding: 0; /* Remove o preenchimento */
 }
 
 #portfolio h2 {
-  margin: 0; /* Remover margem padrão do título */
+  margin: 0; /* Remove a margem padrão do título */
 }
 
 #portfolio p {
-  margin: 0; /* Remover margem padrão do parágrafo */
+  margin: 0; /* Remove a margem padrão do parágrafo */
 }
+
 .container-botoes button:nth-child(1) {
-  background-color: #be301d;
+  background-color: #be301d; /* Cor de fundo do primeiro botão */
 }
 
 .container-botoes button:nth-child(2) {
-  background-color: #be301d;
+  background-color: #be301d; /* Cor de fundo do segundo botão */
 }
 
 .container-botoes button:nth-child(3) {
-  background-color: #be301d;
+  background-color: #be301d; /* Cor de fundo do terceiro botão */
 }
+
+/* Estilos para o loader (carregador de página) */
 .loader {
-  position: fixed;
+  position: fixed; /* Fixa o carregador na tela */
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%; /* Ocupa toda a largura */
+  height: 100%; /* Ocupa toda a altura */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+  z-index: 999; /* Garante que o loader fique sobre outros elementos */
+  display: flex; /* Layout flexível */
+  justify-content: center; /* Centraliza o conteúdo */
+  align-items: center; /* Alinha o conteúdo no centro verticalmente */
 }
 
+/* Estilos para o círculo de carregamento */
 .loader::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  border-color: #fff transparent #fff transparent;
-  animation: spinner 1.2s linear infinite;
+  content: ""; /* Cria um pseudo-elemento vazio */
+  display: block; /* Exibe o elemento como bloco */
+  width: 40px; /* Define a largura do círculo */
+  height: 40px; /* Define a altura do círculo */
+  border-radius: 50%; /* Torna o elemento redondo */
+  border: 5px solid #fff; /* Borda branca */
+  border-color: #fff transparent #fff transparent; /* Cria a aparência de um círculo com bordas alternadas */
+  animation: spinner 1.2s linear infinite; /* Aplica a animação de rotação */
 }
 
+/* Animação de rotação do carregador */
 @keyframes spinner {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Começa no ângulo 0 */
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Finaliza com o círculo completo */
   }
 }
